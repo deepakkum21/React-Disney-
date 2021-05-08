@@ -58,9 +58,13 @@ function Header() {
     );
   };
 
+  const handleHomeRoute = () => {
+    history.push("/home");
+  };
+
   return (
     <Nav>
-      <Logo>
+      <Logo onClick={handleHomeRoute}>
         <img src="/images/logo.svg" alt="Disney+" />
       </Logo>
 
@@ -131,6 +135,7 @@ const Logo = styled.a`
   max-height: 70px;
   font-size: 0;
   display: inline-block;
+  cursor: pointer;
 
   img {
     display: block;
