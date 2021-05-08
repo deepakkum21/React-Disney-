@@ -1,0 +1,17 @@
+{
+  "hosting": {
+    "public": "build",
+    "site":"deepak-react-disney-clone",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
